@@ -1,0 +1,13 @@
+[project]
+name = "nasa-apod-mcp"
+version = "0.1.0"
+description = "MCP tool that fetches NASA's Astronomy Picture of the Day using the APOD API."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.3.0",
+]
+
+[tool.mcp]
+entrypoint = "apod.py"
